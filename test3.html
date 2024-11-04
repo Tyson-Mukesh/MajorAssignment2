@@ -89,8 +89,8 @@
     const tooltip = d3.select("#tooltip");
 
     Promise.all([
-      d3.json('data/towns.topojson'), 
-      d3.csv('data/gini_index.csv')
+      d3.json('towns.topojson'), 
+      d3.csv('gini_index.csv')
     ]).then(([towns, giniData]) => {
       const topojsonObjectName = 'ma';
 
